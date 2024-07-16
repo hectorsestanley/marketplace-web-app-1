@@ -4,8 +4,8 @@ from app import app, db
 from app.forms import LoginForm, RegistrationForm, EditProfileForm, ListingForm, MessageForm, FilterForm
 from app.models import User, Listing, Image, Favorite
 from app.email import send_email
-from werkzeug import secure_filename
-from werkzeug.urls import url_parse
+# from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 from datetime import datetime
 import os
 
